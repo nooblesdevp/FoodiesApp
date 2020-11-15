@@ -20,6 +20,7 @@ code {
 .container {
   width: 425px;
   overflow-y: scroll;
+  background: var(--clr-primary-3);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -32,4 +33,5 @@ code {
   --clr-primary-2: #f5b461;
   --clr-primary-3: #f3eac2;
   --clr-primary-4: #9ad3bc;
+  --clr-primary-5: #f4f4f6;
 }
