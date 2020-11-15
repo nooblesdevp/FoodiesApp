@@ -1,0 +1,87 @@
+.app {
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.nearbyRestaurant-card {
+  flex-direction: initial;
+}
+.nearbyRestaurantInfo {
+  flex: 1;
+  .nearbyRestaurantInfo-location {
+    display: flex;
+    align-items: center;
+    flex-direction: initial;
+    justify-content: space-between;
+    .nearbyRestaurantInfo-locationIcon {
+      font-size: 15px;
+
+      color: var(--clr-primary-1);
+    }
+    span {
+      flex: 1;
+      align-items: center;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  }
+  h5 {
+    font-size: 15px;
+  }
+  .nearbyRestaurantInfo-rating {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    .nearbyRestaurantInfo-rating-icon {
+      color: var(--clr-primary-2);
+      margin-right: 10px;
+    }
+    strong {
+      margin-left: 10px;
+      color: var(--clr-primary-4);
+    }
+  }
+}
+
+.nearbyRestaurantImg {
+  width: 90px;
+  object-fit: contain;
+}
+
+// searchForm
+.searchForm {
+  position: relative;
+  padding: 0 10px;
+  .searchForm-Icon {
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+  }
+  input {
+    flex: 1;
+    border-radius: 5px;
+    background: var(--clr-primary-5);
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .searchForm-filterIcon {
+    margin-left: 10px;
+    font-size: 33px;
+    transform: rotate(90deg);
+    background: var(--clr-primary-2);
+    padding: 4px;
+    border-radius: 4px;
+    color: white;
+  }
+}
