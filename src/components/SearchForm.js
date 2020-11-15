@@ -11,13 +11,13 @@ function SearchForm({ rests }) {
   return (
     <div className="searchForm-container">
       <Card>
-        <div className="ml-3">
+        <div className="ml-3 mt-3">
           <span className="small">
             Your Location <MdExpandMore />
           </span>
           <h5>{rests.location.city_name}</h5>
         </div>
-        <div className="searchForm d-flex  align-items-center mb-4">
+        <div className="searchForm d-flex  align-items-center mb-4 mt-2">
           <MdSearch className="searchForm-Icon" />
           <input type="text" placeholder="search restaurant" />
           <VscSettings className="searchForm-filterIcon" />
