@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import Collection from "../components/Collection";
+import Collections from "../components/Collections";
 import NearbyRestaurant from "../components/NearbyRestaurant";
 import Restaurant from "../components/Restaurant";
 import SearchForm from "../components/SearchForm";
@@ -11,14 +11,14 @@ function Dashboard() {
   return (
     <div className="container">
       {restaurants.map((rests) => {
-        console.log("rests", rests);
+        // console.log("rests", rests);
         const data = rests.nearby_restaurants;
-        console.log("data", data);
+        // console.log("data", data);
         return (
           <>
             {" "}
             <SearchForm location={rests.location.city_name} />
-            <Collection />
+            <Collections />
             <NearbyRestaurant key={rests.location.city_id} collection={data} />
           </>
         );
