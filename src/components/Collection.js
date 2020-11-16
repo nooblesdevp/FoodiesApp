@@ -6,10 +6,11 @@ function Collection({ collection }) {
   return (
     <div className="collection">
       {collection.map((res) => {
-        console.log("res", res);
+        // console.log("res", res);
         const id = res.collection.collection_id;
         const img = res.collection.image_url;
         const title = res.collection.title;
+
         return (
           <div className="collection-card" key={id}>
             <img src={img} alt="" srcset="" />
