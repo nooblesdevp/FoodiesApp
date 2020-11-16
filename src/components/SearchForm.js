@@ -3,11 +3,8 @@ import { MdSearch } from "react-icons/md";
 import { VscSettings } from "react-icons/vsc";
 import { Card } from "react-bootstrap";
 import { MdExpandMore } from "react-icons/md";
-import NearbyRestaurant from "./NearbyRestaurant";
 
-function SearchForm({ rests }) {
-  const data = rests.nearby_restaurants;
-
+function SearchForm({ location }) {
   return (
     <div className="searchForm-container">
       <Card>
@@ -15,7 +12,7 @@ function SearchForm({ rests }) {
           <span className="small">
             Your Location <MdExpandMore />
           </span>
-          <h5>{rests.location.city_name}</h5>
+          <h5> {location} </h5>
         </div>
         <div className="searchForm d-flex  align-items-center mb-4 mt-2">
           <MdSearch className="searchForm-Icon" />
@@ -23,10 +20,6 @@ function SearchForm({ rests }) {
           <VscSettings className="searchForm-filterIcon" />
         </div>
       </Card>
-
-      {data.map((res) => {
-        return <NearbyRestaurant res={res} />;
-      })}
     </div>
   );
 }
