@@ -4,12 +4,16 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.scss";
 import Dashboard from "./pages/Dashboard";
+import RestaurantProfile from "./pages/RestaurantProfile";
 
 function App() {
   return (
     <Router>
       <Switch>
         <div className="app">
+          <Route path="/restaurant/profile/:id">
+            <RestaurantProfile />
+          </Route>
           <Route path="/">
             <Dashboard />
           </Route>
