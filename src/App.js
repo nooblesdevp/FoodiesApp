@@ -14,7 +14,7 @@ function App() {
           <Route path="/restaurant/profile/:id">
             <RestaurantProfile />
           </Route>
-          <Route path="/">
+          <Route path="/" exact>
             <Dashboard />
           </Route>
         </div>
